@@ -1,4 +1,6 @@
 .logo {
+    @extend %link;
+
     display: block;
 
     font-family: $ff-rlw;
@@ -6,15 +8,19 @@
     font-size: 26px;
     line-height: 1.15;
 
-    &_web {
+    &__web {
         color: $color-accent;
     }
 
-    &_studio--black {
+    &__studio--black {
         color: $color-black;
     }
 
-    &_studio--white {
+    &__studio--white {
         color: $color-white;
+    }
+
+    &--footer {
+        margin-bottom: 20px;
     }
 }

@@ -1,4 +1,4 @@
-.hero-section {
+.section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
     align-items: center;
@@ -7,6 +7,10 @@
     background-size: 1600px;
     background-repeat: no-repeat;
     background-position: center;
+
+    &__title {
+        @extend %title;
+    }
 }
 
 .order-button {

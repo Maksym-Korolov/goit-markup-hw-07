@@ -1,8 +1,8 @@
 body {
-    font-family: ff-roboto;
+    font-family: $ff-roboto;
     font-size: 16px;
-    color: color-primary;
-    background-color: color-background;
+    color: $color-primary;
+    background-color: $color-background;
     letter-spacing: 0.03em;
 }
 ul, h1, h2, h3, p {
@@ -14,39 +14,53 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.link {
+.container {
+    width: 100%;   
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+%link {
     text-decoration: none;
     color: $color-heading;
 }
-.list {
+%list {
     list-style: none;
 }
-.sub-title {
+%sub-title {
     color: $color-heading;
     font-size: 36px;
     text-align: center;
     line-height: 1.1719;
 }
-.heading {
+%heading {
     color: $color-heading;
     font-size: 18px;
 }
-.section {
+%section {
     padding-top: $section-padding;
     padding-bottom: $section-padding;
 }
-.container {
- width: 100%;   
- max-width: 1200px;
- margin: 0 auto;
- padding: 0 15px;
-}
-.title {
+%title {
     margin-top: 0;
     margin-bottom: 30px;
     margin-right: auto;
@@ -62,7 +76,7 @@ nav {
     color: $color-white;
     text-transform: uppercase;
 }
-.visually-hidden {
+%visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;

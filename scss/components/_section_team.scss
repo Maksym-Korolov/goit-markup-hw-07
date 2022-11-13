@@ -1,12 +1,18 @@
 .section-team {
+    @extend %section;
+
     background-color: $color-background-tertiary;
 
     &__header {
+        @extend %sub-title;
+
         margin-bottom: 50px;
     }
 }
 
 .team-list {
+    @extend %list;
+
     display: flex;
 
     &__card {
@@ -26,6 +32,8 @@
     }
 
     &__header {
+        @extend %heading;
+
         margin-bottom: 10px;
     
         font-size: 16px;
@@ -42,12 +50,16 @@
 }
 
 .socials-list-team {
+    @extend %list;
+
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
 .socials-list-team__link {
+    @extend %link; 
+    
     width: 44px;
     height: 44px;
     border-radius: 50%;

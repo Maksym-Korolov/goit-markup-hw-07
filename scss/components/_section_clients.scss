@@ -1,16 +1,25 @@
-.section-client {
+.section-clients {
+    @extend %section;
 
     &__header {
+    @extend %sub-title;
+
     margin-bottom: 50px;
     }
 }
 .clients-list {
+    @extend %list;
+
     display: flex;
     gap: 30px;
     justify-content: center;
 }
 .clients-list__link {
+    @extend %link;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     padding: 16px 32px;

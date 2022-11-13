@@ -1,7 +1,11 @@
 .section-we-do {
+    @extend %section;
+
     padding-top: 0;
 
     &__header {
+        @extend %sub-title;
+
         margin-bottom: 50px;
     }
 }
