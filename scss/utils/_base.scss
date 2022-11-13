@@ -1,0 +1,76 @@
+body {
+    font-family: ff-roboto;
+    font-size: 16px;
+    color: color-primary;
+    background-color: color-background;
+    letter-spacing: 0.03em;
+}
+ul, h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    color: $color-heading;
+}
+.list {
+    list-style: none;
+}
+.sub-title {
+    color: $color-heading;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.1719;
+}
+.heading {
+    color: $color-heading;
+    font-size: 18px;
+}
+.section {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+}
+.container {
+ width: 100%;   
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 15px;
+}
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 696px;
+    height: 120px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
